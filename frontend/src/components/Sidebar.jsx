@@ -43,6 +43,9 @@ export default function Sidebar({ conversations = [], onNewChat, onSelectConvers
           >
             {collapsed ? <PanelLeftOpen size={20} /> : <PanelLeftClose size={20} />}
           </IconButton>
+          <animated.span style={{ ...labelSpring, fontSize: 20, fontWeight: 600, whiteSpace: 'nowrap' }}>
+            DomSRT
+          </animated.span>
         </Row>
 
         <Row collapsed={collapsed} labelSpring={labelSpring} onClick={onNewChat} clickable>

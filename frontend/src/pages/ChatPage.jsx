@@ -22,7 +22,7 @@ export default function ChatPage({ conversations, refreshConversations }) {
 
   useEffect(() => {
     if (urlConvId && !initialMessage) {
-      fetchConversationMessages(urlConvId).then(setMessages).catch(() => {});
+      fetchConversationMessages(urlConvId).then(setMessages).catch(() => { });
     }
   }, [urlConvId]);
 
@@ -74,7 +74,7 @@ export default function ChatPage({ conversations, refreshConversations }) {
     <div style={{ display: 'flex', height: '100vh', width: '100vw', fontFamily: 'Poppins, sans-serif' }}>
       <Sidebar
         conversations={conversations}
-        activeConversationId={conversationId}
+        activeConversationId={urlConvId || conversationId}
         onNewChat={() => navigate('/')}
         onSelectConversation={(id) => navigate(`/chat/${id}`)}
       />
