@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #FFF4BF;
+  --text: #111844;
+}
+
+[data-theme="dark"] {
+  --bg: #111844;
+  --text: #FFF4BF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+@keyframes domsrt-dot {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.3; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s;
+}
