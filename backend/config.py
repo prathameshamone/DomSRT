@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     supabase_key: str
 
     # --- CORS ---
-    cors_origins: str = "http://localhost:5173"
+    cors_origins: str = "https://prathameshamone.github.io"
 
     model_config = SettingsConfigDict(
         env_file=ENV_PATH,
