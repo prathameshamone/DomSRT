@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://domsrt.onrender.com';
 
 export async function streamChat(message, conversationId, { onConversationId, onChunk, onDone, onError }) {
   try {
