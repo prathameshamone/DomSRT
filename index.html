@@ -8,13 +8,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>frontend</title>
+  <title>DomSRT</title>
+
+  <script>
+    // Restore the real URL if we were redirected from 404.html
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var redirect = params.get('redirect');
+      if (redirect) {
+        window.history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
   <script type="module" crossorigin src="/DomSRT/assets/index-Cjt_ORhB.js"></script>
   <link rel="stylesheet" crossorigin href="/DomSRT/assets/index-J4oTD81Z.css">
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root"></div>
 </body>
 
 </html>
